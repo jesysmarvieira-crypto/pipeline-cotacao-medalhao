@@ -54,7 +54,7 @@ if response.status_code == 200:
 
     # 3. Salvando na Gold (O seu arquivo excel final)
     # A Gold é para o usúario final ou dashboards
-    df.to_excel('data/gold/cotacao_final.xlsx', index=False)
+    df.to_csv('data/gold/cotacao_final.csv', index=False)
 
     print("-----------------------------------------------")
     print('Arquivos gerados nas camadas Bronze, Silver e Gold!')
